@@ -1,0 +1,33 @@
+.rouePage{
+    @apply w-screen flex h-screen;
+    .bannerBlock{
+        @apply hidden md:flex max-w-5xl mx-auto border-2 w-full;
+    }
+    .contentRoue{
+        @apply flex md:hidden flex-col justify-start items-center max-w-5xl w-full h-screen px-5;
+        .logoHeader{
+            @apply w-full flex py-5 flex-col justify-center items-center; 
+            img{
+                @apply w-[200px];
+            }
+            button{
+                @apply bg-white text-black font-bold text-xl rounded-3xl px-10 py-2 uppercase;
+                letter-spacing: 2px;
+                line-height: 1;
+                span{
+                    @apply text-rose-500 text-sm font-normal; 
+                }
+            }
+        }
+        .roueSection{
+            @apply w-screen border-2 mt-5;
+            height: calc(100% - 70px);
+        }
+    }
+
+
+    .pubSection{
+        @apply w-screen flex md:hidden text-black bottom-0 justify-center items-center bg-slate-500 fixed h-[70px];
+    }
+
+}
